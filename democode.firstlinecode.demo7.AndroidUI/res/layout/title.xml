@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/title_bg"
+    >
+	
+    <Button
+        android:id="@+id/title_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/back_bg"
+        android:text="Back"
+        android:textColor="#DBE6CB"
+        android:layout_margin="5dp"
+        />
+
+    <TextView 
+        android:id="@+id/title_textview1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="This is Title"
+        android:textSize="25sp"
+        android:textColor="#F6FDCA"
+        />
+    
+    <Button 
+        android:id="@+id/title_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+		android:background="@drawable/edit_bg"
+		android:text="Edit"
+		android:textColor="#DBE6CB"
+		android:layout_margin="5dp"
+        />
+    
+</LinearLayout>

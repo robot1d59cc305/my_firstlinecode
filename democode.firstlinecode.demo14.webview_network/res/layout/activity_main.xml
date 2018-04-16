@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/activity_main_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="进入WebAPP展示Activity" />
+
+            <Button
+                android:id="@+id/activity_main_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="使用HTTP协议访问网络-httpurlconnection" />
+
+            <Button
+                android:id="@+id/activity_main_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="使用HTTP协议访问网络-httpclient" />
+
+            <Button
+                android:id="@+id/activity_main_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="使用PULL的方式解析Apache服务器上的XML文件" />
+
+            <Button
+                android:id="@+id/activity_main_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="使用SAX的方式解析Apache服务器上的XML文件" />
+
+            <Button
+                android:id="@+id/activity_main_button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="解析JSON格式数据" />
+
+            <Button
+                android:id="@+id/activity_main_button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="解析JSON格式数据--使用GSON" />
+
+            <Button
+                android:id="@+id/activity_main_button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="获取Sever XML文件内容Activity" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

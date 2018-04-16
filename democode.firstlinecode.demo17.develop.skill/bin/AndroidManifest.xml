@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="democode.firstlinecode.demo17.develop.skill"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="democode.firstlinecode.demo17.develop.skill.context.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- MainActivity,这个类是这个Android应用程序端的入口,主要的Activity. -->
+        <activity android:name="democode.firstlinecode.demo17.develop.skill.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity包装类,将需要对所有的Activity做出的操作都封装到这个类里面,然后其余的类继承此类即可. -->
+        <activity android:name="democode.firstlinecode.demo17.develop.skill.BaseActivity" ></activity>
+    </application>
+
+</manifest>

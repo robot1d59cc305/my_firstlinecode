@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:text="使用SharedPreferences方式存储数据"
+			android:onClick="writeData"
+	        />
+	
+	    <Button 
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+	        android:text="使用SharedPreferences方式读取数据"
+	        android:onClick="readData"
+	        />
+	    
+    </LinearLayout>
+    
+    <TableLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="1"
+        >
+		
+        <TableRow>
+        
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:text="Username:"
+	            android:textSize="18sp"
+	            />
+	        
+	        <EditText 
+	            android:id="@+id/sharedpreferences_username"
+            	android:layout_height="wrap_content"
+            	android:hint="请输入学生的账户名称"
+            />	
+        
+    	</TableRow>
+    	
+        <TableRow>
+        
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:text="Monery:"
+	            android:textSize="18sp"
+	            />
+	        
+	        <EditText
+	            android:id="@+id/sharedpreferences_monery" 
+            	android:layout_height="wrap_content"
+            	android:hint="请输入学生的校园卡金额"
+            />	
+        
+    	</TableRow>
+    	
+        <TableRow>
+        
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:text="Screen:"
+	            android:textSize="18sp"
+	            />
+	        
+	        <EditText
+	            android:id="@+id/sharedpreferences_screen" 
+            	android:layout_height="wrap_content"
+            	android:hint="请输入学生的考试成绩"
+            />	
+        
+    	</TableRow>
+    	
+        <TableRow>
+        
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:text="Id:"
+	            android:textSize="18sp"
+	            />
+	        
+	        <EditText 
+	            android:id="@+id/sharedpreferences_id"
+	            android:layout_height="wrap_content"
+	            android:hint="请输入学生的Id号码"
+            />	
+        
+    	</TableRow>
+        
+    </TableLayout>
+    
+</LinearLayout>

@@ -1,0 +1,8 @@
+#### 功能主要都是写在了IndexActivity这个类里面了.可以从IndexActivity类当中去找,去发现,一个一个根据方法的注释来看
+* IntentTransmitLastActivity这个类配合的比较多,主要是从下一个Activity传递数据到上一个Activity这块.
+* DestroyActivity1,以及DestroyActivity2这个类,主要是配合IndexActivity这个类完成系统会销毁Activity时如何将数据保存这个.
+* WebBrowserActivity ,这个是action为android.intent.action.VIEW 这个代码启动的,没什么不同.
+* HideActivity,HideCustomizationActivtiycu,IntentTransmitLastActivity 这三个类是通过不同的Intent的启动模式启动的.
+* DialogActivity,这个Activity是通过对话框的形式去启动的.
+
+注意,这里的README.md文件编码必须要是UTF-8才能正确显示中文.但整个项目是GBK编码.

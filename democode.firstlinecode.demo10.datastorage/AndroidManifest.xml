@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.democode.firstlinecode.demo10.datastorage"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+	
+        <activity
+            android:name = "democode.firstlinecode.demo10.datastorage.activity.MainActivity"
+            >
+            
+            <intent-filter >
+                
+                <action   android:name = "android.intent.action.MAIN" />
+                
+                <category android:name = "android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name = "democode.firstlinecode.demo10.datastorage.activity.SaveFileActivity" ></activity>
+        
+        <receiver
+            android:name = "democode.firstlinecode.demo10.datastorage.receiver.MyBroadcastReceiver"
+            >
+            
+            <intent-filter>
+                
+                <action android:name = "com.example.broadcast.receiver" />
+                
+            </intent-filter>
+            
+        </receiver>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo10.datastorage.activity.SharedPreferencesActivity"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo10.datastorage.activity.DatabaseHelperActivity"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo10.datastorage.activity.SqlManipulateSQLiteActivity"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo10.datastorage.activity.DatabaseUpdateActivity"
+            >
+            
+        </activity>
+        
+    </application>
+
+</manifest>

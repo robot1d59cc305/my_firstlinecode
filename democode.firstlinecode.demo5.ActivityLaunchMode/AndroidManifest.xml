@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.democode.firstlinecode.demo5.activitylaunchmode"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="ActivityLaunchMode"
+        android:theme="@style/AppTheme" >
+
+        <!-- 配置StandardActivity,启动模式为默认的Standard模式. -->
+        <activity
+            android:name=".StandardActivity"
+            android:label="StandardActivityActivityLaunchMode" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- 配置SingleTopActivity,启动模式为singletop -->
+        <activity
+            android:name=".SingleTopActivity"
+            android:label="SingleTopActivityActivityLaunchMode"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <!-- 配置SingleTopActivity,SingleTopActivity2,SingleTaskActivity3 -->
+        <activity
+            android:name=".SingleTaskActivity"
+            android:label="SingleTaskActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".SingleTaskActivity2"
+            android:label="SingleTaskActivity2" >
+        </activity>
+        <activity
+            android:name=".SingleTaskActivity3"
+            android:label="SingleTaskActivity3" >
+        </activity>
+
+        <!-- 配置SingleInstance,SingleInstance2,SingleInstance3 -->
+        <activity
+            android:name=".SingleInstance"
+            android:label="SingleInstance" >
+        </activity>
+        <activity
+            android:name=".SingleInstance2"
+            android:label="SingleInstance2"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name=".SingleInstance3"
+            android:label="SingleInstance3" >
+        </activity>
+    </application>
+
+</manifest>

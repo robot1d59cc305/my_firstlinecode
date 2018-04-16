@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+     >
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        
+	        <!-- android:orientation="vertical"的布局是什么样子的 -->
+		    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" 
+			    android:background="#c0c0c0"
+			    >
+				
+				<Button 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Button1"
+				    />  
+				    
+				<Button 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Button2"
+				    />
+				
+				<Button 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="Button3"
+				    />	
+				    
+			</LinearLayout> 
+				
+		    <!-- android:orientation="horizontal"的布局是什么样子的  -->
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="#008080"
+			     >
+			
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button4"
+			        />
+			    
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button5"
+			        />
+			    
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button6"
+			        />
+			    
+			</LinearLayout>
+		    
+			<!-- 当android:orientation="vertical"时android:layout_gravity的 操作是什么样子的 -->
+			<LinearLayout
+				android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:background="#CCFFFF"
+			    >
+			    
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button7"
+					android:layout_gravity="left"
+			        />
+			    
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button8"
+					android:layout_gravity="center"
+			        />
+			    
+			    <Button 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Button9"
+			        />
+			    
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="#33CC66"
+			    >
+				
+			    <EditText 
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:hint="Type something"
+			        />
+			    
+			    <Button 
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_width="0dp"
+					android:text="Send"	
+			        />
+			    	    
+			</LinearLayout>
+			
+        
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:background="#CCFFFF"
+			    >
+				
+			    <EditText 
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:hint="请输入密码"
+			        />
+			    
+			    <Button 
+			        android:layout_height="wrap_content"
+			        android:layout_width="wrap_content"
+					android:text="Send"	
+			        />
+			    	    
+			</LinearLayout>
+			
+		</LinearLayout>
+			
+    </ScrollView>	
+    	
+</LinearLayout>

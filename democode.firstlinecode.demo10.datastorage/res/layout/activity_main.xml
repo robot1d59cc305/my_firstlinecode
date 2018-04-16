@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECF6FF" >
+    
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Android DataStorage"
+        android:textColor="#000000"
+        android:padding="15px"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="将用户输入的字符串保存到文件当中"
+        android:onClick="savefile"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用SharedPreferences写出数据"
+        android:onClick="writeSharedPreferences"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQLite数据库的常见操作"
+        android:onClick="createDatabase"
+        />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据库产品上线阶段操作"
+        android:onClick="shujukuUpdate"
+        />
+     
+</LinearLayout>

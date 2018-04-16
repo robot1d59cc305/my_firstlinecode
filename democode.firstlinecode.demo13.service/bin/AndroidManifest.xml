@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.democode.firstlinecode.demo12.service"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 主界面程序 -->
+        <activity android:name = "democode.firstlinecode.demo13.service.main.MainActivity">
+            
+            <intent-filter >
+				<action   android:name = "android.intent.action.MAIN" />
+				<category android:name = "android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <!-- Android多线程编程使用案例 -->
+        <activity android:name = "democode.firstlinecode.demo13.service.thread.AndroidThreadActivity" ></activity>
+        
+        <!-- Android异步消息处理机制 -->
+        <activity android:name = "democode.firstlinecode.demo13.service.thread.AndroidThreadAsynchronous" />
+	
+        <!-- Android服务界面,提供启动和停止服务的功能 -->
+        <activity android:name = "democode.firstlinecode.demo13.service.service.AndroidServiceJieMianActivity" ></activity>
+        
+        <!-- Android服务界面2,提供(启动和停止,绑定和解绑)服务的功能  -->
+        <activity android:name = "democode.firstlinecode.demo13.service.service.ActivityServiceCommunicationJieMian" ></activity>
+        
+        <!-- 定义一个基本的服务 这个服务实现了基本的启动和停止方法 -->
+        <service android:name = "democode.firstlinecode.demo13.service.service.BasicService" ></service>
+        
+        <!-- 定义一个基本的服务 这个服务实现了启动和停止,绑定和卸载方法 以及与活动进行数据上的通信-->
+        <service android:name = "democode.firstlinecode.demo13.service.service.AndroidServiceCommunicationService" ></service>
+        
+        <!-- 定义一个基本的服务 这个服务实现了前台服务的功能,就是说后台服务实现的这个逻辑代码有的时候很容易被系统进程杀掉,而前台进程则相对来说不会被杀掉,而且有的时候业务上也有这个东西的需求 -->
+        <service android:name = "democode.firstlinecode.demo13.service.service.QianTaiFuwuService" ></service>
+        
+    </application>
+
+</manifest>

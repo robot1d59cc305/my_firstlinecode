@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+     >
+    
+    <fragment 
+        android:id="@+id/news_title_fragment"
+        android:name="democode.firstlinecode.demo8.xinwenyingyong.fragment.NewsTitleFragment"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        />
+    
+    <!-- 事实证明,即使把FrameLayout这个布局模式去除了,也是可以使用的.程序重新编译运行之后得到的结果与之前是相同的. -->
+    <fragment 
+        android:id="@+id/news_content_fragment"
+        android:name="democode.firstlinecode.demo8.xinwenyingyong.fragment.NewsContentFragment"
+        android:layout_height="match_parent"
+   	 	android:layout_width="0dp"
+    	android:layout_weight="3"
+        />
+
+</LinearLayout>

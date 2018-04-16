@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        >
+    
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical"
+            >
+        
+		    <TextView
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+				android:text="这是IndexActivity的界面" />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="前往ShowActivity界面"
+		        android:onClick="showActivityButton"
+		        />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="前往HideActivity界面"
+		        android:onClick="HideActivityButton"
+		        />
+		
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="HideCustomizationActivtiycu"
+		        android:onClick="HideCustomizationActivtiycu"
+		        />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="打开网页,系统将能够打开网页的应用程序放在应用程序列表里面供选择.这里直接使用代码来操作."
+		        android:onClick="WebBrowserButton"
+		        />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="打开网页,系统将能够打开网页的应用程序放在应用程序列表里面供选择.这里直接使用Inteng中的常量来操作."
+		        android:onClick="WebBrowserActivityButton"
+		        />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="打电话"
+		        android:onClick="phone"
+		        />
+		    
+		    <EditText 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:textColorHint="#AAAAAA"    
+		        android:textSize="15dip"
+				android:hint="请输入传递给IntentTransmitLastActivity界面的数据."
+				android:id="@+id/IndexActivityEditText"
+		        />
+		    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="发送数据给IntentTransmitLastActivity界面"
+		        android:onClick="IndexActivityOnClick"
+		        />
+		    
+		    <Button 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="启动对话框式DialogActivity"  
+				android:onClick="DialogActivity"      
+		        />
+	    
+		    <Button 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="通过点击DestroyActivity1Button来进入通过点击DestroyActivity1界面"
+		        android:onClick="DestroyActivity1"
+		        />
+		    
+	    </LinearLayout>
+    
+    </ScrollView>
+    
+</LinearLayout>

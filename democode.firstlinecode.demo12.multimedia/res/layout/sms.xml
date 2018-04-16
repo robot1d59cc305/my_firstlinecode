@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Form:"
+		    android:padding="10dp"
+		    />        
+        
+		<!-- 用户的短信号码在成功发送短信之后短信号码将会显示在这里 -->
+		<TextView 
+		    android:id="@+id/sms_textview_number"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    />
+		
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Content:"
+		    android:padding="10dp"
+		    />        
+        
+		<!-- 用户的短信号码在成功发送短信之后短信内容将会显示在这里 -->
+		<TextView 
+		    android:id="@+id/sms_textview_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    />
+		
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="To:"
+		    android:padding="10dp"
+		    />        
+        
+		<!-- 用户的短信号码数据输入在这里 -->
+		<EditText 
+		    android:id="@+id/sms_edittext_number"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    />
+		
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <!-- 用户的短信号码内容输入在这里 -->
+		<EditText 
+		    android:id='@+id/sms_edittext_content'
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    />
+		
+		<!-- 用户通过这个按钮发送内容 -->
+		<Button 
+		    android:text="Send"
+		    android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:id="@+id/sms_button_send"
+		    />
+		
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+	
+    <TableRow >
+        
+        <TextView 
+            android:text="Account:"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <EditText 
+            android:id="@+id/login_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input You Account"
+            android:textSize="17sp"
+            />
+        
+    </TableRow>
+    
+    <TableRow >
+        
+        <TextView 
+            android:text="Password:"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        <EditText
+            android:id="@+id/login_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+        
+    </TableRow>
+    
+    <TableRow
+        >
+        
+        <Button 
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			android:text="Login"
+			android:textSize="17sp"
+			android:onClick="xiaxian"
+            />
+        
+    </TableRow>
+    
+</TableLayout>

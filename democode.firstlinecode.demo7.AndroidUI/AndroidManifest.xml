@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.democode.firstlinecode.demo7.androidui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name  = ".IndexActivity"
+            android:label = "IndexActivity"
+            >
+            
+          <intent-filter >
+               <action   android:name = "android.intent.action.MAIN" ></action>
+               <category android:name = "android.intent.category.LAUNCHER" ></category>
+           </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name  = ".FrequentlyUIActivity"
+            android:label = "FrequentlyUIActivity"
+            >
+            
+         </activity>
+        
+         <activity
+             android:name=".LinearLayoutActivity"
+             android:label="LinearLayoutActivity"
+             >
+             
+         </activity>
+        
+         <activity
+             android:name=".RelativeLayoutActivity"
+             android:label="RelativeLayoutActivity"
+             >
+             
+         </activity>
+         
+         <activity
+             android:name=".FrameLayoutActivity"
+             android:label="FrameLayoutActivity"
+             >
+         </activity>
+         
+         <activity 
+             android:name=".TableLayoutActivity"
+             android:label="TableLayoutActivity"
+             >
+         </activity>
+         
+         <activity
+             android:name=".IncludeActivity"
+             android:label="IncludeActivity"
+             >
+             
+         </activity>
+         
+         <activity
+             android:name="com.democode.firstlinecode.demo7.basiclistview.ListViewArrayActivity"
+             android:label="ListViewArrayActivity"
+             >
+             
+         </activity>
+         
+         <activity
+             android:name="com.democode.firstlinecode.demo7.customlistview.FruitActivity"
+             android:label="FruitActivity"
+             >
+             
+         </activity>
+         
+         <activity
+             android:name = ".NinePatchActivity"
+             android:label="NinePatchActivity"
+             >
+             
+         </activity>
+         
+         <activity
+             android:name = "com.democode.firstlinecode.demo7.liaotian.LiaoTianActivity"
+             >
+             
+         </activity>
+         
+    </application>
+
+</manifest>

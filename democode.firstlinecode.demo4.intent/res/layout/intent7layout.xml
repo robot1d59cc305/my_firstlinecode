@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这里是DestroyActivity1界面"
+        />
+
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:hint="请输入你要保存的数据,这里主要是考验是否能在Activity销毁之后依然将数据显示."
+		android:id="@+id/DestroyActivity1EditText"
+        />
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="通过点击DestroyActivity1Button来进入通过点击DestroyActivity2界面"
+        android:onClick="DestroyActivity1"
+        />
+    
+</LinearLayout>

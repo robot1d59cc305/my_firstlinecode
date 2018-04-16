@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.democode.firstlinecode.demo12.notifications"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <!-- 手机振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 接受短信权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 发送短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    
+    <!-- 向SD卡写数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 主界面Activity -->
+        <activity android:name="democode.firstlinecode.demo12.notifications.main.JieMianActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 短信功能需要用到的Activity -->
+        <activity android:name="democode.firstlinecode.demo12.multimedia.sms.SmSActivity" />
+
+        <!-- 通知功能需要用到的Activity -->
+        <activity android:name = "democode.firstlinecode.demo12.multimedia.notification.MainActivity" />
+        <activity android:name = "democode.firstlinecode.demo12.multimedia.notification.NotificationActivity" />
+        
+        <!-- 调用摄像头和相册需要用到的Activity -->
+		<activity android:name = "democode.firstlinecode.demo12.multimedia.choosepic.ChoosePicActivity" />
+		
+		<!-- 播放音频需要用到的Activity -->
+		<activity android:name = "democode.firstlinecode.demo12.multimedia.play_audio.PlayAudioActivity" ></activity>
+		
+		<!-- 播放视屏需要用到的Activity -->
+		<activity android:name = "democode.firstlinecode.demo12.multimedia.playvideo.PlayVideoActivity" ></activity>
+		
+    </application>
+
+</manifest>

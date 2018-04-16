@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+             >
+    	
+        <Button 
+	        android:id="@+id/carete_database"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="创建数据库"
+	        android:layout_gravity="center"
+        />
+
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="增加数据"
+	        android:layout_gravity="center"
+	        android:onClick="addData"
+	        />
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="修改数据"
+	        android:layout_gravity="center"
+	        android:onClick="updateData"
+	        />
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="删除数据"
+	        android:layout_gravity="center"
+	        android:onClick="deleteData"
+	        />
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="查询数据"
+	        android:layout_gravity="center"
+	        android:onClick="queryData"
+	        />
+        
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="使用事务操作数据库"
+			android:layout_gravity="center"
+			android:onClick="shiwuData"
+	        />
+	    
+    </LinearLayout>
+    
+    <!--
+            此代码进行屏蔽,bug修复不了.
+     <ListView 
+        android:id="@+id/database_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#FFF"
+        android:dividerHeight="1dp"
+        android:visibility="gone"
+        />
+     -->
+    
+</LinearLayout>

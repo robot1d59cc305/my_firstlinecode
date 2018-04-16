@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECF6FF" >
+    
+    <EditText
+        android:id="@+id/save_file_edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="#FFFFFF"
+        />
+    
+    <TextView 
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入字符到文本框当中,程序会自动保存这些字符."
+        android:textColor="#000000"
+        android:padding="15px"
+        />
+    
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name = "activity_main_background" >#A0A0A0</color>
+    <color name = "activity_main_text_color" >#FFFFFF</color>
+    <color name = "rightotherfragment_background" >#3067B0</color>
+    <color name = "color3" >#A4C639</color>
+    
+</resources>

@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.democode.firstlinecode.demo9.receiver2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity 
+            android:name = "democode.firstlinecode.demo9.receiver2.MyBroadcastReceiverActivity"
+            >
+			
+            <intent-filter >
+                
+                <action android:name="android.intent.action.MAIN"  />
+                
+                <category android:name = "android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <!-- 
+        	这里使用的是静态注册的方式在注册这个MyBroadcastReceiver2广播.
+         -->
+        <receiver 
+            android:name = "democode.firstlinecode.demo9.receiver2.MyBroadcastReceiver2" 
+            >
+            
+            <!-- android:priority 优先级比较高的广播会先收到广播 -->
+            <intent-filter
+                android:priority="100"
+                 >
+                
+                <action android:name = "com.example.broadcast.receiver" />
+                
+            </intent-filter>
+            
+        </receiver>
+        
+    </application>
+
+</manifest>

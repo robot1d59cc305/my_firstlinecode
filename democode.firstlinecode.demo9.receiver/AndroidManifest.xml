@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.democode.firstlinecode.demo9.receiver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name =  "android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name = "democode.firstlinecode.demo9.receiver.index.MainActivity"
+            >
+            
+            <intent-filter>
+                
+                <action   android:name = "android.intent.action.MAIN"  />
+                <category android:name = "android.intent.category.LAUNCHER"  />
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo9.receiver.dynamic_registration_to_monitor_network_changes.DynamicActivity"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo9.receiver.tool.BaseActivity"
+            >
+            
+        </activity>
+		
+        <activity
+            android:name = "democode.firstlinecode.demo9.receiver.sendzidingyiguangbo_biaozhun.MyBroadcastReceiverActivity"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name = "democode.firstlinecode.demo9.receiver.bendiguangbo.BenDiGuangBoActivity"
+            >
+            
+        </activity>
+        
+        <!-- 这里使用的方式是静态注册
+        	  模拟器上可以运行,不知道是不是使用的,开机自启.
+         -->
+        <receiver android:name = "democode.firstlinecode.demo9.receiver.boot.BootReceive" >
+            
+            <intent-filter>
+                
+                <action android:name = "android.intent.action.BOOT_COMPLETED" />
+                
+            </intent-filter>
+            
+        </receiver>
+        
+        <!-- 通过自定义广播,发送后,在这里使用一个静态注册的方式去接受需要接受的广播,是为MyBroadcastReceiver这个类去服务. -->
+        <receiver
+            android:name = "democode.firstlinecode.demo9.receiver.sendzidingyiguangbo_biaozhun.MyBroadcastReceiver"
+            >
+            
+            <intent-filter>
+                
+                <action android:name = "com.example.broadcast.receiver" />
+                
+            </intent-filter>
+            
+        </receiver>
+        
+    </application>
+
+</manifest>

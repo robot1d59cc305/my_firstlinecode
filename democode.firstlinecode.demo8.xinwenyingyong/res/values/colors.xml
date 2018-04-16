@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name = "list_view_item_text" >#323232</color>
+    <color name = "list_view_divider" >#D5D5</color>
+    
+</resources>

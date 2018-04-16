@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#222222"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 1.用户将想要解析的服务器的XML文件的地址放在这个文本编辑器当中 -->
+        <EditText
+            android:id="@+id/testserver_edittext1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:textColor="#F2F2F2"
+            android:hint="XML File Location"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:cursorVisible="true" 
+            />
+
+        <!-- 2.用户在1中文本编辑器的窗口里面输入服务器的XML文件的地址之后,通过点击这个按钮,将文本编辑器当中的地址进行获取. -->
+        <Button
+            android:id="@+id/testserver_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send" 
+            android:textColor="#F2F2F2"
+            android:textSize="13sp"
+            />
+        
+    </LinearLayout>
+
+    <!-- 显示解析的内容 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/testserver_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F2F2F2"
+            android:textSize="13sp"
+             />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 使用这个控件,当屏幕内容过多的时候,可以通过这个控件在屏幕当中出现一个滚轮的效果,而不是将一些控件不显示出来. -->
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical"
+            >
+			
+            <TextView 
+                android:id="@+id/frequentlyuiTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             	android:textColor="#20EB35"
+             	android:text="This is EditText"
+             	android:textSize="24sp"
+                />
+            
+            <Button 
+				android:id="@+id/frequentlyuiButton1"
+				android:text="Button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+                />
+            
+            <EditText 
+                android:id="@+id/frequentlyuiEditText1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="请输入内容后点击上方按钮使用Toast展示信息."
+				android:maxLines="2"
+                />
+            
+            <TextView 
+                android:id="@+id/frequentlyuiTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             	android:text="------------------------------------------------"
+             	android:textSize="24sp"
+                />
+            
+            <Button 
+				android:id="@+id/frequentlyuiButton2"
+				android:text="点击之后将下方图片切换"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+                />
+            
+            <ImageView 
+                android:src="@drawable/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/frequentlyuiImage1"
+                />
+            
+            <TextView 
+                android:id="@+id/frequentlyuiTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             	android:text="------------------------------------------------"
+             	android:textSize="24sp"
+                />
+            
+            <Button 
+                android:id="@+id/frequentlyuiButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击之后下方的圆形进度条暂停"
+                />
+            
+            <ProgressBar 
+                android:id="@+id/frequentlyuiProgressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            
+            <TextView 
+                android:id="@+id/frequentlyuiTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             	android:text="------------------------------------------------"
+             	android:textSize="24sp"
+                />
+            
+            <Button 
+                android:id="@+id/frequentlyuiButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="每点击一次下方的进度条+10"
+                />
+            
+            <ProgressBar 
+                android:id="@+id/frequentlyuiProgressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                />
+            
+            <TextView 
+                android:id="@+id/frequentlyuiTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+             	android:text="------------------------------------------------"
+             	android:textSize="24sp"
+                />	
+            
+            <Button 
+                android:id="@+id/frequentlyuiButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击按钮弹出AiterDialog对话框"
+                />
+            
+            <Button 
+                android:id="@+id/frequentlyuiButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击按钮弹出ProgressDialog对话框"
+                />
+            
+        </LinearLayout>
+		        
+    </ScrollView>
+
+</LinearLayout>

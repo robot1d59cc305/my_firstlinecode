@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是StandardlayoutActivity的界面,主要是用来测试Activity对于standard这个启动模式的反应是怎么样的." />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StandardActivityButton1"
+        android:text="启动StandardActivity类" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="StandardActivityButton2"
+        android:text="点击这里的按钮可以跳转到SingleTopActivity的界面" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SingleTaskActivityButton3"
+        android:text="点击这里的按钮可以跳转到SingleTaskActivity的界面" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SingleInstanceButton4"
+        android:text="点击这里的按钮可以跳转到SingleInstance的界面" />
+
+</LinearLayout>

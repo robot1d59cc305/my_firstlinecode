@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="democode.firstlinecode.demo4.intent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>  
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- 这个在Android当中时主活动,app的主窗口. -->
+        <activity
+            android:name  = ".IndexActivity"
+            android:label = "IndexActivity"
+            >
+            
+            <intent-filter>
+				<action   android:name = "android.intent.action.MAIN"       ></action>
+				<category android:name = "android.intent.category.LAUNCHER" ></category>				                
+            </intent-filter>
+            
+        </activity>
+       
+       <!-- 这个在Android当中通过显示Intent来实现 -->
+        <activity
+            android:name  = ".ShowActivity"
+            android:label = "ShowActivity"
+            >
+            
+        </activity>
+        
+        <!-- 这个在Android当中通过隐式Intent当中的来启动.但是intent-filter节点中的数据都是默认的. -->
+        <activity
+            android:name  = ".HideActivity"
+            android:label = "HideActivity"
+            >
+            
+            <intent-filter>
+				<action   android:name = "android.intent.action.DEFAULT" ></action>
+				<category android:name = "android.intent.category.DEFAULT" ></category>
+            </intent-filter>
+            
+        </activity>
+        
+        <!-- 这个在Android当中通过隐式Intent当中的来启动.但是intent-filter节点中的数据都是自定义的. -->
+        <activity
+            android:name=".HideCustomizationActivtiycu"
+            android:label="HideCustomizationActivtiycu"
+            >
+            
+	        <intent-filter>
+				<action   android:name = "HideCustomizationActivtiycu"  ></action>
+				<category android:name = "android.intent.category.DEFAULT" ></category>
+            </intent-filter>
+
+	    </activity>
+        
+        <activity
+            android:name  = ".WebBrowserActivity"
+            android:label = "WebBrowserActivity"
+            >
+            
+            <intent-filter>
+                <!--  
+				
+					与此对应，我们还可以在<intent-filter>标签中再配置一个<data>标签，用于更精确地指
+					定当前活动能够响应什么类型的数据。<data>标签中主要可以配置以下内容。
+					1. android:scheme
+					用于指定数据的协议部分，如上例中的 http 部分。
+					2. android:host
+					用于指定数据的主机名部分，如上例中的 www.baidu.com 部分。
+					3. android:port
+					用于指定数据的端口部分，一般紧随在主机名之后。
+					4. android:path
+					用于指定主机名和端口之后的部分，如一段网址中跟在域名之后的内容。
+					5. android:mimeType
+					用于指定可以处理的数据类型，允许使用通配符的方式进行指定。
+					只有<data>标签中指定的内容和 Intent 中携带的 Data 完全一致时，当前活动才能够响应
+					该 Intent。不过一般在<data>标签中都不会指定过多的内容，如上面浏览器示例中，其实只
+					需要指定 android:scheme 为 http，就可以响应所有的 http 协议的 Intent 了。
+				
+				 -->
+                <action   android:name = "android.intent.action.VIEW" ></action>
+                <category android:name = "android.intent.category.DEFAULT"></category>
+                <data android:scheme = "http" ></data>
+            </intent-filter>
+            
+        </activity>
+        
+        <!-- 这个activity是用于展示,配合,从上一个Activity传递数据到下一个Activity,从下一个Activity传递数据到上一个Activity中的. -->
+        <activity
+            android:name=".IntentTransmitLastActivity"
+            android:label="IntentTransmitLastActivity"
+            >
+        </activity>
+        
+        <!-- 这个activity是用于展示,一个是对话框式的Activity,当这个Activity没有去占满整个的屏幕,那么其它的Activity是处于一个什么样的生命周期状态呢? -->
+        <activity
+            android:name=".DialogActivity"
+            android:label="DialogActivity"
+            android:theme="@android:style/Theme.Dialog"
+            >
+        </activity>
+        
+        <!-- 这个Activity是用来实现"临时数据保存机制"的,是其中文件的一部分. -->
+        <activity
+            android:name=".DestroyActivity1"
+            android:label="DestroyActivity1"
+            >
+        </activity>
+        
+        <!-- 这个Activity是用来实现"临时数据保存机制"的,是其中文件的一部分. -->
+        <activity
+            android:name=".DestroyActivity2"
+            android:label="DestroyActivity2"
+            >
+        </activity>
+        
+    </application>
+
+</manifest>

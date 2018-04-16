@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/activity_main_button1"
+        android:text="Android多线程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+    
+    <Button 
+        android:id="@+id/activity_main_button2"
+        android:text="服务的基本用法"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+    
+    <Button 
+        android:id="@+id/activity_main_button4"
+        android:text="服务与活动的通信"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+    
+    <Button 
+        android:id="@+id/activity_main_button5"
+        android:text="前台服务"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+    
+    <Button 
+        android:id="@+id/activity_main_button6"
+        android:text="标准的Service写法_处理ANR异常_使用IntentService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+    
+    <Button 
+        android:id="@+id/activity_main_button3"
+        android:text="服务的实践--后台执行定时任务"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
+
+</LinearLayout>

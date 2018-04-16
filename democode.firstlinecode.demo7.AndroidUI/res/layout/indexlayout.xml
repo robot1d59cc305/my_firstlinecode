@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+		
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            
+            <Button
+		        android:id="@+id/IndexActivityButton1_Go_FrequentlyUIActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入FrequentlyUIActivity界面"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton2_Go_LinearLayoutActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入LinearLayoutActivity界面"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton3_Go_RelativeLayoutActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入RelativeLayoutActivity界面的relativelayout_alinParent案例中"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton4_Go_RelativeLayoutActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入RelativeLayoutActivity界面的相对于某元素布局案例中"
+		        />
+		    
+		    <Button 
+				android:id="@+id/IndexActivityButton5_Go_FrameLayoutActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入FrameLayoutActivity界面的案例当中"        
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton6_Go_TableLayoutActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入TableLayoutActivity界面的案例当中"
+		        />
+		
+		    <Button 
+		        android:id="@+id/IndexActivityButton7_Go_IncludeActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="进入IncludeActivity界面,查看导入了其它的layout资源文件有什么效果"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton8_Go_CustomControlActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="实际上还是在调用IndexActivity只是布局文件换成了customcontrol.xml文件"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton9_Go_ListViewArrayActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="展示以数组为数据源的ListView控件"
+		        />
+		    
+		    <Button 
+		        android:id="@+id/IndexActivityButton10_Go_FruitActivity"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="展示以实体类为数据源的ListView控件"
+		        />
+		    
+		    <Button
+		        android:id="@+id/NinepatchActivityButton11_Go_nine_patch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="制作nine_patch"
+		         />
+            
+		    <Button 
+		        android:id="@+id/IndexActivityButton12_Go_LiaoTianActivity"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="进入聊天界面"
+		        />
+		    
+        </LinearLayout>
+        
+    </ScrollView>	
+    
+</LinearLayout>
